@@ -1,0 +1,14 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+Assets/AssetBundles/Mac/
+Assets/AssetBundles/Windows/
+Temp/
+ProjectSettings/
+Logs/
+Library/
+obj/
+build/
+build.app/
+PlayerDataCache/
+.vs/
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
