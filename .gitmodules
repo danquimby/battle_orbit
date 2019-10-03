@@ -1,0 +1,3 @@
+[submodule "child1"]
+	path = child1
+	url = https://github.com/danquimby/OM-LogFactory.git
