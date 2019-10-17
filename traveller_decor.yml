@@ -1,0 +1,187 @@
+
+mystery_casket1:
+  <<: *decor_reward_base
+  id: 10330
+  description.ru: "Загаточная шкатулка"
+  description_text.ru: "Нажмите, чтобы узнать подробнее"
+  icon_name: "decor/mystery_casket.png"
+  f3d_name: "mystery_casket"
+  height: 1
+  width: 1
+  move: true
+  has_shadow: true
+  multi_buy: true
+  object_states:
+    - drop:
+        pick:
+          - roll: 100
+            items:
+              - product_drum_damaru: { min_quantity: 1, min_value: 0, max_value: 33 }
+              - product_amber_heart: { min_quantity: 1, min_value: 34, max_value: 66 }
+              - product_ancient_statuette: { min_quantity: 1, min_value: 67, max_value: 100 }
+          - roll: 100
+            items:
+              - product_saw: { min_quantity: 5, min_value: 0, max_value: 33 }
+              - product_axe: { min_quantity: 5, min_value: 34, max_value: 66 }
+              - product_picker: { min_quantity: 5, min_value: 67, max_value: 100 }
+          - roll: 100
+            items:
+              - energy: { min_quantity: 25, min_value: 0, max_value: 33 }
+              - coins: { min_quantity: 1000, min_value: 34, max_value: 66 }
+              - exp: { min_quantity: 500, min_value: 67, max_value: 100 }
+          - roll: 100
+            items:
+              - random_present: {min_quantity: 2, min_value: 0, max_value: 33, products_filter_flags: "is_flower_collection"}
+              - random_present: {min_quantity: 2, min_value: 34, max_value: 66, products_filter_flags: "is_balusters_collection"}
+              - random_present: {min_quantity: 2, min_value: 67, max_value: 100, products_filter_flags: "is_crystal_skull_collection"}
+        create:
+          - roll: 0
+            items:
+              - exp: { min_quantity: 0 }
+
+mystery_case1:
+  <<: *decor_reward_base
+  id: 10331
+  description.ru: "Загадочный ларец"
+  description_text.ru: "Нажмите, чтобы узнать подробнее"
+  icon_name: "decor/mystery_case.png"
+  f3d_name: "mystery_case"
+  height: 1
+  width: 1
+  move: true
+  has_shadow: true
+  multi_buy: true
+  object_states:
+    - drop:
+        pick:
+          - roll: 100
+            items:
+              - product_amphra: { min_quantity: 1, min_value: 0, max_value: 33 }
+              - product_ceremonial_cup: { min_quantity: 1, min_value: 34, max_value: 66 }
+              - product_faberge_egg: { min_quantity: 1, min_value: 67, max_value: 100 }
+          - roll: 100
+            items:
+              - product_grain_mixture: { min_quantity: 5, min_value: 0, max_value: 33 }
+              - product_axe: { min_quantity: 5, min_value: 34, max_value: 66 }
+              - product_saw: { min_quantity: 5, min_value: 67, max_value: 100 }
+          - roll: 100
+            items:
+              - product_boards: { min_quantity: 3, min_value: 0, max_value: 33 }
+              - product_potato_pasty: { min_quantity: 2, min_value: 34, max_value: 66 }
+              - product_tail_rope: { min_quantity: 2, min_value: 67, max_value: 100 }
+          - roll: 100
+            items:
+              - random_present: {min_quantity: 2, min_value: 0, max_value: 33, products_filter_flags: "is_mammoth_ring_collection"}
+              - random_present: {min_quantity: 2, min_value: 34, max_value: 66, products_filter_flags: "is_balusters_collection"}
+              - random_present: {min_quantity: 2, min_value: 67, max_value: 100, products_filter_flags: "is_casket_of_coins_collection"}
+        create:
+          - roll: 0
+            items:
+              - exp: { min_quantity: 0 }
+
+mystery_chest1:
+  <<: *decor_reward_base
+  id: 10361
+  description.ru: "Загадочный сундук"
+  description_text.ru: "Нажмите, чтобы узнать подробнее"
+  icon_name: "decor/mystery_chest.png"
+  f3d_name: "mystery_chest"
+  height: 1
+  width: 2
+  move: true
+  has_shadow: true
+  multi_buy: true
+  object_states:
+    - drop:
+        pick:
+          - roll: 9
+            items:
+              - pirate_locket: { min_quantity: 1, min_value: 7, max_value: 7 }
+              - ruby_locket: { min_quantity: 1, min_value: 8, max_value: 8 }
+              - emerald_locket: { min_quantity: 1, min_value: 9, max_value: 9 }
+              - pouch_for_coins_collection_item: { min_quantity: 1, min_value: 10, max_value: 10 }
+          - roll: 8
+            items:
+              - product_bast: { min_quantity: 10, min_value: 5, max_value: 5 }
+              - product_supple_cane: { min_quantity: 10, min_value: 6, max_value: 6 }
+              - product_clay: { min_quantity: 10, min_value: 7, max_value: 7 }
+              - product_limestone: { min_quantity: 10, min_value: 8, max_value: 8 }
+          - roll: 10
+            items:
+              - product_firewood: { min_quantity: 3, min_value: 7, max_value: 7 }
+              - product_linden_firewood: { min_quantity: 3, min_value: 8, max_value: 8 }
+              - product_dried_linen: { min_quantity: 1, min_value: 9, max_value: 9 }
+              - product_crock: { min_quantity: 1, min_value: 10, max_value: 10 }
+          - roll: 5
+            items:
+              - random_present: {min_quantity: 2, min_value: 2, max_value: 2, products_filter_flags: "is_balusters_collection"}
+              - random_present: {min_quantity: 2, min_value: 3, max_value: 3, products_filter_flags: "is_crystal_skull_collection"}
+              - random_present: {min_quantity: 2, min_value: 4, max_value: 4, products_filter_flags: "is_mammoth_ring_collection"}
+              - random_present: {min_quantity: 2, min_value: 5, max_value: 5, products_filter_flags: "is_casket_of_coins_collection"}
+        create:
+          - roll: 0
+            items:
+              - exp: { min_quantity: 0 }
+
+
+kadomatsu:
+  <<: *pick_decor_base
+  id: 10318
+  description.ru: "Кадомацу"
+  description_text.ru: "Прекрасное украшение для вашей фермы!"
+  icon_name: "decor/kadomatsu.png"
+  f3d_name: "kadomatsu"
+  height: 2
+  width: 2
+  has_shadow: true
+  sell: false
+  animated: false
+  wait_text_key: "kadomatsu_wait"
+  prepare_text_key: "kadomatsu_prepare"
+  pick_cursor: "empty"
+  pick_tooltip: "exp"
+  has_terrain_mark: true
+  object_states:
+    - drop:
+        create:
+          - roll: 0
+            items:
+              - gold: {min_quantity: -100}
+        pick:
+          - roll: 0
+            items:
+              - exp: {min_quantity: 15}
+    - stage_length: 8
+      drop:
+
+sakura:
+  <<: *pick_decor_base
+  id: 10319
+  description.ru: "Сакура"
+  description_text.ru: "Прекрасное украшение для вашей фермы!"
+  icon_name: "decor/sakura.png"
+  f3d_name: "sakura"
+  height: 2
+  width: 2
+  has_shadow: false
+  sell: false
+  animated: false
+  wait_text_key: "sakura_wait"
+  prepare_text_key: "sakura_prepare"
+  pick_cursor: "empty"
+  pick_tooltip: "exp"
+  has_terrain_mark: true
+  object_states:
+    - drop:
+        create:
+          - roll: 0
+            items:
+              - gold: {min_quantity: -100}
+        pick:
+          - roll: 0
+            items:
+              - exp: {min_quantity: 75}
+              - energy: {min_quantity: 2}
+    - stage_length: 36
+      drop:
+
